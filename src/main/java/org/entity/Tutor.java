@@ -21,6 +21,12 @@ public class Tutor {
         this.age = age;
     }
 
+    public Tutor(Long id, String name, Integer age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
     public Tutor() {
     }
 
