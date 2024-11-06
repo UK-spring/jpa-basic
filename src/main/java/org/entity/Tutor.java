@@ -1,15 +1,13 @@
 package org.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tutor")
 public class Tutor {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @Column(name = "name", nullable = false, unique = true)
@@ -23,4 +21,7 @@ public class Tutor {
         this.age = age;
     }
 
+    public Tutor() {
+
+    }
 }
