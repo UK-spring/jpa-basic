@@ -35,5 +35,7 @@ public class Main2_2 {
             // 엔티티 매니저 연결 종료
             em.close();
         }
+
+        emf.close();
     }
 }

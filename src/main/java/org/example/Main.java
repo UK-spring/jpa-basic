@@ -38,5 +38,7 @@ public class Main {
             em.close();
         }
 
+        emf.close();
+
     }
 }
