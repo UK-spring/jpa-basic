@@ -4,7 +4,6 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import org.entity.Company;
 import org.entity.Tutor;
 
 public class Main7 {
@@ -22,9 +21,9 @@ public class Main7 {
 
         try {
             // 비영속
-            Company company = new Company(10L, "sparta");
+            Tutor tutor = new Tutor(100L, "wonuk", 100);
             // 영속
-            em.persist(company);
+            em.persist(tutor);
 
             // transaction이 commit되며 실제 SQL이 실행된다.
             transaction.commit();
