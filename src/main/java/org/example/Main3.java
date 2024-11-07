@@ -25,7 +25,7 @@ public class Main3 {
             // 1차 캐시 조회
             Tutor findTutor2 = em.find(Tutor.class, 1L);
 
-            System.out.println("findTutor1 == findTutor2 : " + (findTutor1 == findTutor2));
+            System.out.println("findTutor1 == findTutor2 : " + findTutor1.equals(findTutor2));
 
             // transaction이 commit되며 실제 SQL이 실행된다.
             transaction.commit();
