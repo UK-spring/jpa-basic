@@ -20,9 +20,9 @@ public class CompanyMain {
 
         try {
             // 비영속
-            Company company = new Company(2L, "sparta", "서울");
+//            Company company = new Company(2L, "sparta", "서울");
             // 영속
-            em.persist(company);
+//            em.persist(company);
 
             // transaction이 commit되며 실제 SQL이 실행된다.
             transaction.commit();
