@@ -20,7 +20,7 @@ public class Main6 {
 
         try {
 
-            Tutor tutor = new Tutor("wonuk", 100);
+            Tutor tutor = new Tutor(1L, "wonuk", 100);
             em.persist(tutor);
 
             // flush 수동 호출
