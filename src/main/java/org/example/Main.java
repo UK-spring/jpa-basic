@@ -20,7 +20,7 @@ public class Main {
 
         try {
             // 비영속
-            Tutor tutor = new Tutor("wonuk", 100);
+            Tutor tutor = new Tutor(1L, "wonuk", 100);
 
             // 영속
             System.out.println("persist 전");
