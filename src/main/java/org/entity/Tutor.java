@@ -9,7 +9,6 @@ public class Tutor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 
@@ -41,4 +40,9 @@ public class Tutor {
     public Integer getAge() {
         return age;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }
