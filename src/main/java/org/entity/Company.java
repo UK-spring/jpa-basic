@@ -1,5 +1,6 @@
 package org.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -12,6 +13,8 @@ public class Company {
 
     @Id
     private Long id;
+
+//    @Column(unique = true, nullable = false, length = 20)
     private String name;
 
 //    private String address;
